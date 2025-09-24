@@ -1,0 +1,262 @@
+%-------------------------
+% Resume in Latex
+% Author : Arya Mahesh Bhiwapurkar (Modified from Jake Gutierrez's template)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{fontawesome}
+\usepackage[hidelinks]{hyperref} % already likely present
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\usepackage[margin=0.2in, top=0.2in, bottom=0.3in]{geometry}
+
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------------
+% Custom Resume Commands
+% -------------------------
+
+% ⚫ BULLET POINT ENTRY — used for each responsibility/description line
+% �� If line spacing between bullet points is too tight or loose, adjust \vspace here
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}} % Try -1pt or -3pt if spacing feels off
+  }
+}
+
+% �� FOUR-FIELD ENTRY (Company, Dates, Role, Location/Details)
+% ��️ If vertical gap below company name is too much/little, change \vspace here
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item % ⬅️ Adjust this to control space before company line
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt} % ⬅️ Controls space between company line and bullet start
+}
+
+% �� COMPACT FORMAT — use when showing Company | Role on one line
+% �� If space between this and bullet list is weird, adjust \vspace below
+\newcommand{\resumeCompactHeading}[3]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} \textbar\ \textit{#2} & \textit{#3} \\
+  \end{tabular*}\vspace{-5pt} % ⬅️ Controls spacing below heading
+}
+
+% �� SUB-SUBHEADING — for nested rows (rarely used)
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% �� PROJECT HEADING — project name and date
+% �� To align project name margin with section heading, tweak left margin globally (see below)
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+% �� Single sub-item (used within nested lists)
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% �� CUSTOM BULLET SYMBOL for deeper list levels (not needed unless nesting)
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% �� EXPERIENCE/EDUCATION/PROJECT SECTION START
+% ��️ If section contents look too indented, adjust `leftmargin` (e.g., try 0in or -0.1in)
+\newcommand{\resumeSubHeadingListStart}{\vspace{-1pt}\begin{itemize}[leftmargin=0in, label={}]}
+
+% �� SECTION END
+% ��️ If too much space below a section, tweak \vspace here
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-10pt}}
+
+% �� BULLET LIST START (for experience/project points)
+% �� To reduce indent of bullet points, decrease `leftmargin`
+\newcommand{\resumeItemListStart}{\vspace{-2pt}\begin{itemize}[leftmargin=0.3in]} % Try 0.25in or 0.2in if too indented
+
+% �� BULLET LIST END
+% �� To reduce space between this and next job/project, make \vspace more negative (e.g., -12pt)
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+% �� BULLET LIST END (tighter version)
+\newcommand{\resumeItemListEndTight}{\end{itemize}\vspace{-6pt}} % Use when you're running out of space
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\begin{center}
+  {\Huge \scshape Arya Mahesh Bhiwapurkar} \\ \vspace{5pt}
+  \small 
+  \raisebox{-0.1\height}\faPhone\ +91 6263278107 ~
+  \href{mailto:arya.bhiwapurkar@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{arya.bhiwapurkar@gmail.com}} ~
+  \href{https://www.linkedin.com/in/arya-mahesh-bhiwapurkar-b52577162/}{\raisebox{-0.0\height}\faLinkedin\ \underline{LinkedIn}} ~
+  \href{https://github.com/AryaBhiwapurkar}{\raisebox{-0.0\height}\faGithub\ \underline{GitHub}} ~
+  \href{https://aryabhiwapurkar18.vercel.app/}{\raisebox{-0.0\height}\faGlobe\ \underline{Portfolio}}
+  \vspace{-8pt}
+\end{center}
+
+
+
+
+
+
+
+% ----------- EDUCATION -----------
+\section{\textbf{EDUCATION}}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {International Institute of Information Technology, Naya Raipur}{\textit{Nov 2022 -- June 2026}}
+    {\normalsize \textit{Bachelor of Technology in Data Science and Artificial Intelligence}}{\normalsize CGPA: 8.54/10}
+\resumeSubHeadingListEnd
+
+% ----------- EXPERIENCE -----------
+\section{\textbf{EXPERIENCE}}
+\resumeSubHeadingListStart
+
+% --- JSP Internship ---
+\resumeSubheading
+  {Jindal Steel and Power Ltd. (JSP)}{\textit{June 2025 -- July 2025}}
+  {Software Engineer Intern}{}
+
+\resumeItemListStart
+  \resumeItem{\textbf{Tech Stack:} \textbf{React.js}, \textbf{CSS}, \textbf{Bootstrap}}
+\resumeItem{Contributed to \textbf{JAI-OD}, an AI platform used by \textbf{1000+ users} across industrial sites for safety and operations monitoring.
+}
+\resumeItem{Developed \textbf{10+ responsive frontend pages}, including a \textbf{9-tab navigation bar} and reusable \textbf{React} components. }
+\resumeItem{Implemented secure login with \textbf{Google SSO}, dynamically rendered profile data and handled protected routing.}
+
+\resumeItem{Delivered \textbf{production-ready} pages for backend integration, showcased in the \textbf{approved internal demo.}}
+
+\resumeItemListEndTight
+
+
+% --- Execute OJ Project ---
+\resumeSubheading
+  {\textbf{AlgoUniversity} \textbar{} {\small \href{https://www.executeoj.online}{Website}} \textbar{} {\small \href{https://github.com/AryaBhiwapurkar/Execute_Online_Judge}{Source Code}}}
+  {\textit{May 2025 -- June 2025}}
+  {Software Engineer Co-Op Intern}{}
+
+
+
+
+
+\resumeItemListStart
+  \resumeItem{\textbf{Tech Stack:} React.js, Node.js, Express.js, MongoDB, Docker, AWS (EC2/ECR), Gemini API, Vercel, Hostinger}
+  \resumeItem{Built \textbf{ExecuteOJ}, a full-stack Online Judge platform from scratch to simulate real-time coding environments for \textbf{Python} and \textbf{C++} with \textbf{Docker-based sandboxing} (1s timeout, 256MB memory cap).}
+  \resumeItem{Designed frontend architecture using React.js with dynamic pages for login, problem lists, problem details, and a compiler with custom input/output console.}
+  \resumeItem{Implemented secure \textbf{JWT-based authentication} and \textbf{MongoDB} to support separate user and future admin workflows.}
+  \resumeItem{Integrated \textbf{Gemini API} for \textbf{AI-powered code reviews}, displaying scores (out of 10) and \textbf{qualitative feedback}}
+  \resumeItem{Deployed backend using \textbf{AWS EC2/ECR}; hosted frontend on Vercel; managed domain and DNS setup via Hostinger.}
+ \resumeItem{Conducted \textbf{live testing} with \textbf{35+ users} and gathered \textbf{actionable feedback} for the next phase of implementation.}
+
+\resumeItemListEndTight
+
+\resumeSubHeadingListEnd
+
+
+
+
+%---------------------Projects-----------------
+\section{\textbf{PROJECTS}}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+  {\textbf{Campus Navigator} $|$ \href{https://github.com/AryaBhiwapurkar/Campus-Navigator}{GitHub}}{\textit{Apr 2025 -- May 2025}}
+  \resumeItemListStart
+    \resumeItem{\textbf{Tech Stack:} TensorFlow, Node.js, Express.js, HTML, JavaScript}
+    \resumeItem{Built a \textbf{mobile-first AR navigation system} in a team of two to guide users across campus using \textbf{phone sensors} and \textbf{live camera input}.}
+    \resumeItem{Collaborated on model integration; teammate trained a \textbf{MobileNetV2} classifier on 50+ images of 8 IIIT-NR campus landmarks, achieving \textbf{96\% test accuracy}.}
+    \resumeItem{Developed backend using \textbf{Node.js} and \textbf{Express.js} to process geolocation and render live landmark predictions.}
+    \resumeItem{Used \textbf{Geolocation API} to refresh navigation paths every 30s, handling real-world \textbf{GPS noise} (±5m error margin).}
+    \resumeItem{Added \textbf{voice navigation} via \textbf{Google TTS} and enabled real-time \textbf{AR overlays} on \textbf{Vuzix Blade 2} smart glasses.}
+
+  \resumeItemListEnd
+
+
+
+\resumeSubHeadingListEnd
+
+
+%-----------Achievements----------------------
+%-----------Achievements----------------------
+\section{\textbf{ACHIEVEMENTS}}
+\resumeSubHeadingListStart
+  \resumeItemListStart
+
+  \resumeItem{Research paper \textit{“Smart Dermatological Diagnosis: Vision Transformer-Driven Skin Multi-Disease Detection System”} accepted at \textbf{IEEE eSmarTA 2025}, an international IEEE conference hosted by \textbf{Ibb University}, Yemen (Hybrid), 5–6 Aug 2025.}
+  
+  \resumeItem{Qualified for \textbf{AlgoUniversity Accelerator Camp} by ranking in the \textbf{top 0.1\% of 40,000+ applicants} in India (2025).}
+  
+  \resumeItem{Contributed to book chapter \textit{“Leveraging Data Analytics and AI for Smart Tourism Management”} published in \textbf{Advancing Smart Tourism Through Analytics} by \textbf{IGI Global}, a leading academic publisher.}
+  
+  \resumeItem{Secured \textbf{1\textsuperscript{st} rank} in \textbf{Bit-2-Byte 2024}, an aptitude contest organized by \textbf{TSOC, IIIT-NR}.}
+  
+  \resumeItem{Solved \textbf{700+ DSA problems} across platforms (\textbf{LeetCode}, \textbf{Codeforces}, etc.) , demonstrating strong algorithmic problem-solving skills  and time complexity optimization .}
+
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+
+
+ %-----------PROGRAMMING SKILLS-----------
+\section{\textbf{TECHNICAL SKILLS}}
+
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, HTML, CSS, C++, SQL, Python} \\
+     \textbf{Frameworks/Technologies/Tools}{: React.js, Node.js, Express.js, MongoDB, REST API, GitHub, Postman, AWS, Docker, Hostinger, Google Gemini, Relational Databases} \\
+     \textbf{Relevant Coursework}{: Data Structures and Algorithms, Operating System, Object Oriented Programming, Database Management, Computer Networks, System Design, Machine Learning, Object Oriented Analysis and Design.} \\
+    }}
+ \end{itemize}
+ 
+ %-----------POR-----------
+\section{\textbf{POSITION OF RESPONSIBILITY}}
+\resumeItem{\textbf{Core Member, AIML Club, IIIT-NR} \hfill {\textit{June 2023 – May 2024}} \\
+Co-led workshops, anchored events, and mentored 100+ juniors, demonstrating strong communication, teamwork, and leadership while driving ML engagement across campus.}
+
+
+
+
+ \end{document}
